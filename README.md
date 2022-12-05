@@ -45,12 +45,10 @@ return [
         'mailer' => [
             'class' => \yii\symfonymailer\Mailer::class,            
             'transport' => [
-                'scheme' => 'smtps',
                 'host' => '',
                 'username' => '',
                 'password' => '',
                 'port' => 465,
-                'dsn' => 'native://default',
             ],
             'viewPath' => '@common/mail',
             // send all mails to a file by default. You have to set
